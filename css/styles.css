@@ -5,6 +5,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     color: var(--primery-color);
+    background-color: var(--light-color);
 }
 
 :root {
@@ -16,6 +17,9 @@ body {
     --secondary-light-color: #F4F4FD;
 }
 
+.navigation {
+    font-style: normal;
+}
 .list {
     list-style: none;
 }
@@ -36,10 +40,14 @@ body {
     color: var(--title-color);
 }
 .logo-color {
-    color: var(--secondary-color);
+    color:var(--title-color);
 }
 
-.menu-link:hover, menu-link:focus {
+.menu-link:hover {
+    color: var(--link-color);
+}
+
+.menu-link:focus {
     color: var(--link-color);
 }
 
@@ -67,8 +75,13 @@ body {
     background-color: var(--link-color);
 }
 
+.btn:focus {
+    color: var(--light-color);
+    background-color: var(--link-color);
+}
+
 .hero-button {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -93,7 +106,7 @@ body {
     color: var(--title-color);
 }
 
-.hero-section {
+.hero-title {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -103,7 +116,7 @@ body {
     background-color: var(--title-color);
 }
 
-.visually-hidden {
+.hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -143,6 +156,14 @@ body {
     text-align: center;
 }
 
+.team-section {
+    background-color: var(--secondary-light-color);
+}
+
+.list-team {
+    background-color: var(--light-color);
+}
+
 .mod-btn {
     font-family: 'Roboto';
     font-style: normal;
@@ -165,7 +186,7 @@ body {
 }
 
 .logo-link-footer {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -174,7 +195,7 @@ body {
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--secondary-light-color);
+    color: var(--secondary-color);
 }
 
 .gallery-title {
